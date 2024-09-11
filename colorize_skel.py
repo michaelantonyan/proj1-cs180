@@ -301,7 +301,7 @@ for imname in imgnames:
     im_out_file = np.dstack([ar_out, ag_out, b_out])
 
     # save the image
-    fname = 'img_outputs_final/' + imname[:-4] + '_out.jpg'
+    fname = imname[:-4] + '_out.jpg'
     #fname = 'img_outputs_final/' + imname[:-4] + '_out' + imname[-4:]
     skio.imsave(fname, im_out_file)
 
